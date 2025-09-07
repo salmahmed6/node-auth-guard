@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import fs from "node:fs";
+import connect from "./src/db/connect.js";
 
 dotenv.config();
 
@@ -30,7 +31,7 @@ const server = async () => {
       console.log(`Server is running on port ${port}`);
     });
   } catch (error) {
-    console.log("Failed to strt server.....", error.message);
+    console.log("Failed to start server!", error.message);
     process.exit(1);
   }
 };
