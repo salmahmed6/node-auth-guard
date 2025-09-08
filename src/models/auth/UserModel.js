@@ -25,7 +25,7 @@ const UserSchema = new mongoose.Schema(
 
     photo: {
       type: String,
-      default: "https://avatars.githubusercontent.com/u/19819005?v=4",
+      default: "https://twemoji.maxcdn.com/v/latest/72x72/1f35f.png",
     },
 
     bio: {
