@@ -13,9 +13,10 @@ Authentication and Authorization package for Node.js/Express applications.
 - Modular controllers, middleware, and helpers
 
 ## Installation
+You can **download and install** the package directly from [npm](https://www.npmjs.com/package/@salmaahmed/auth-guard):
 
 ```bash
-npm install node-auth-guard
+npm install @salmaahmed/auth-guard
 ```
 
 Or use as a local package:
@@ -44,7 +45,7 @@ NODE_ENV=development
 ```javascript
 import express from "express";
 import cookieParser from "cookie-parser";
-import userRoutes from "node-auth-guard/src/routes/userRoutes.js"; // adjust path if needed
+import userRoutes from "@salmaahmed/auth-guard/src/routes/userRoutes.js"; // adjust path if needed
 
 const app = express();
 
@@ -62,7 +63,7 @@ app.listen(8000, () => {
 ### 3. Connect to Database
 
 ```javascript
-import connect from "node-auth-guard/src/db/connect.js";
+import connect from "@salmaahmed/auth-guard/src/db/connect.js";
 
 connect();
 ```
