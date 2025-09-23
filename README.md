@@ -1,4 +1,4 @@
-# node-auth-guard
+# node-auth-guard-package
 
 Authentication and Authorization package for Node.js/Express applications.
 
